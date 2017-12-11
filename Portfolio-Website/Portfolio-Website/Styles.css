@@ -1,36 +1,45 @@
 ﻿* {
     box-sizing: border-box;
 }
+body, html {
+    height: 100%;
+    margin: 0;
+}
+body {
+    padding: 0px;
+}
+
 
 .grid-container {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%; /*make a grid with 3 columns*/
+    grid-template-columns: 1fr 1fr 1fr; /*make a grid with 3 columns*/
     grid-gap: 0px;
     background-color: #011638;
     padding: 10px;
 }
 
-    .grid-container > div {
-        background-color: rgba(255, 255, 255, 0.8);
+ .grid-container > div {
+     background-color: rgba(255, 255, 255, 0.8);
         text-align: center;
         padding: 20px 0;
         font-size: 30px;
-    }
+}
 
 .sub-grid-projects {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0px;
     background-color: #909AC0;
     padding: 10px;
 }
 
 .img-circle {
-    border-radius: 50%;
+    border-radius: 30%;
 }
 
 .fullscreen {
-    background-color: #011638;
+    background-image: url('Img/LosAngelesHues.png');
+    /*background-color: #282828;*/
     /* Full height */
     height: 100%;
 }
@@ -51,11 +60,12 @@
 }
 
 
-.aboutMe {
+.aboutMeProfilePic {
     grid-column-start: 1;
     grid-column-end: 4;
     background-color: #364156;
 }
+
 
 .myPortfolio {
     grid-column-start: 1;
@@ -81,15 +91,10 @@
     background-color: #364156;
 }
 
-body, html {
-    height: 100%;
-    margin: 0;
-}
 
 
-body {
-    padding: 0px;
-}
+
+
 
 .button {
     background-color: #555555;
